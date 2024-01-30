@@ -4,7 +4,6 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
-                    <h1 style={{ textAlign: 'center' }}>Marin Mikami(marin-mi)</h1>
                     <TodoListCard />
                 </Col>
             </Row>
@@ -52,6 +51,7 @@ function TodoListCard() {
 
     return (
         <React.Fragment>
+            <h2 className="text-center">Todo App by Marin Mikami(marin-mi)</h2>
             <AddItemForm onNewItem={onNewItem} />
             {items.length === 0 && (
                 <p className="text-center">No items yet! Add one above!</p>
